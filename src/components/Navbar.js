@@ -3,7 +3,7 @@ import styled, {css} from "styled-components";
 import { Link } from "react-router-dom";
 import { menuData } from "../data/MenuData";
 import {Button} from '../components/Button'
-import Bars from '../images/bars-svgrepo-com.svg'
+import Bars from '../images/bars-staggered-white.svg';
 
 const Nav = styled.div`
   height: 60px;
@@ -40,7 +40,11 @@ display:none;
   background-size: contain;
   height: 40px;
   width: 40px;
-
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right:0;
+  transform: translate(-50% 25%);
 }
 `;
 
