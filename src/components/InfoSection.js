@@ -28,12 +28,12 @@ const ColumnLeft = styled.div`
   padding: 1rem 2rem;
   order: ${({ reverse }) => (reverse ? "2" : "1")}; //  default
 
-  h1{
+  h1 {
     margin-bottom: 1rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
-  p{
+  p {
     margin-bottom: 2rem;
   }
 `;
@@ -46,10 +46,10 @@ const ColumnRight = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    order: ${({ reverse }) => (reverse? "2" : "1")}; //  default
+    order: ${({ reverse }) => (reverse ? "2" : "1")}; //  default
   }
 
-  img{
+  img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -58,7 +58,6 @@ const ColumnRight = styled.div`
   @media screen and (max-width: 768px) {
     width: 90%;
     height: 90%;
-
   }
 `;
 
@@ -77,7 +76,9 @@ const InfoSection = ({
           <h1>{heading}</h1>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          <Button to="/homes" primary='true'>{buttonLabel}</Button>
+          <Button to="/homes" primary="true">
+            {buttonLabel}
+          </Button>
         </ColumnLeft>
         <ColumnRight reverse={reverse}>
           <img src={image} alt="home" />

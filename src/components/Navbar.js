@@ -74,7 +74,7 @@ const NavBtn = styled.div`
 const Navbar = ({ toggle }) => {
   return (
     <Nav>
-      <Logo>Elixr</Logo>
+      <Logo>Majesty Properties</Logo>
       <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
