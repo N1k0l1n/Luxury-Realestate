@@ -42,6 +42,7 @@ display:none;
   width: 40px;
   cursor: pointer;
   position: absolute;
+  margin-top: 0.7rem;
   top: 0;
   right:0;
   transform: translate(-50% 25%);
