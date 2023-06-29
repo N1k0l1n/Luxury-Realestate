@@ -1,3 +1,4 @@
+import Dropdown from "./components/Dropdown";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { sliderData } from "./data/SliderData";
@@ -8,6 +9,7 @@ function App() {
     <>
     <GlobalStyle/>
       <Navbar />
+      <Dropdown/>
       <Hero slides={sliderData}/>
     </>
   );
